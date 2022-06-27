@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Netflix Clone</title>
+  <link rel="stylesheet" href="./css/output.css">
+  <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon">
+</head>
+
+<body class="bg-black text-white">
+
+  <!-- Navbar and Hero -->
+  <header class="border-b-8 border-grey bg-black/50 bg-blend-color bg-cover bg-[url('../img/movie-bg.jpg')] h-[100vh] overflow-y-scroll">
+    <!-- Navbar -->
+    <nav class="flex flex-wrap nav-bg justify-around gap-y-4 sm:justify-between py-6 px-1 sm:px-8">
+      <div>
+        <img src="./img/logo.svg" class="w-4/5 lg:w-11/12" alt="Netflix's Logo" loading="lazy">
+      </div>
+      <!-- Buttons -->
+      <div class="flex gap-x-4">
+        <select name="language" class="bg-black text-gray-400 border border-gray-400 rounded-sm px-2">
+          <option value="english">English</option>
+          <option value="spanish">Spanish</option>
+        </select>
+        <a href="#!" class="red-btn">Sign In</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="text-center py-8 sm:py-24 px-7 sm:px-10 lg:px-40">
+      <h1 class="font-bold text-3xl sm:text-5xl py-2">Unlimited movies, TV shows, and more.</h1>
+      <h2 class="text-xl sm:text-2xl py-1 font-semibold">Watch anywhere. Cancel anytime.</h2>
+      <form action="#" class="flex flex-col items-center py-9">
+        <h3 class="text-xl sm:text-[1.2rem] font-semibold">Ready to watch? Enter your email to create or restart your membership.</h3>
+        <div class="flex flex-col lg:flex-row items-center lg:items-stretch gap-y-2 justify-center my-4 w-4/5 sm:w-3/4 lg:w-2/3">
+          <input type="email" name="email" class="px-4 py-2 w-full lg::w-4/5 text-black" placeholder="Email address">
+          <button type="submit"
+            class="red-btn lg:text-2xl lg:w-[275px] py-4 px-5 hover:brightness-110 flex justify-evenly items-center gap-x-2">Get
+            Started <img src="./img/svgexport-2.svg" loading="lazy"></button>
+        </div>
+      </form>
+
+    </section>
+  </header>
+
+  <!-- Section 1 -->
+  <section
+    class="flex flex-col lg:flex-row px-8 py-8 justify-center items-center text-center lg:text-left lg:justify-between border-b-8 border-grey">
+    <div class="lg:w-3/4">
+      <h2 class="text-2xl py-2 sm:text-4xl lg:text-5xl font-bold">Enjoy on your TV.</h2>
+      <h3 class="text-lg py-2 sm:text-xl lg:text-2xl">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV,
+        Blu-ray players, and more.</h3>
+    </div>
+
+    <div class="relative">
+      <img src="./img/tv.png" alt="A TV skeleton framework" loading="lazy" class="relative z-[2]">
+      <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" class="absolute max-w-[73%] max-h-[54%] top-[22%] left-[14%]" muted autoplay loop></video>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section
+    class="flex flex-col lg:flex-row-reverse px-8 py-8 justify-center items-center text-center lg:text-left lg:justify-between border-b-8 border-grey">
+    <div class="lg:w-3/4">
+      <h2 class="text-2xl py-2 sm:text-4xl lg:text-5xl font-bold">Download your shows to watch offline.</h2>
+      <h3 class="text-lg py-2 sm:text-xl lg:text-2xl">Save your favorites easily and always have something to watch.
+      </h3>
+    </div>
+
+    <div class="relative">
+      <img src="./img/eleven.jpg" alt="Picture of El in a mobile phone with Mike at the background" loading="lazy">
+      <div
+        class="flex justify-between items-center absolute left-2/4 bottom-[4%] bg-black w-3/5 -translate-x-1/2 border-2 border-white/25 rounded-xl py-1.5 px-3">
+        <div>
+          <!-- an Image -->
+        </div>
+        <div class="flex flex-col text-left gap-y-0 grow">
+          <p class="text-[.9rem] lg:text-base font-semibold -mb-1">Stranger Things</p>
+          <p class="text-tiny lg:text-[.9rem] text-blue-600">Downloading...</p>
+        </div>
+        <div>
+          <img src="./img/download-icon.gif" alt="Downloading Icon" class="w-12" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section
+    class="flex flex-col lg:flex-row px-8 py-8 justify-center items-center text-center lg:text-left lg:justify-between border-b-8 border-grey">
+    <div class="lg:w-3/4">
+      <h2 class="text-2xl py-2 sm:text-4xl lg:text-5xl font-bold">Watch everywhere.</h2>
+      <h3 class="text-lg py-2 sm:text-xl lg:text-2xl">Stream unlimited movies and TV shows on your phone, tablet,
+        laptop, and TV without paying more.</h3>
+    </div>
+
+    <div class="relative">
+      <img src="./img/device-pile.png" alt="A pile of multiple devices" loading="lazy" class="relative z-[2]">
+      <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v" class="absolute top-[11%] left-[20%] max-w-[63%] max-h-[47%]" autoplay muted loop></video>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section
+    class="flex flex-col lg:flex-row-reverse px-8 py-8 justify-center items-center text-center lg:text-left lg:justify-between border-b-8 border-grey">
+    <div class="lg:w-3/4">
+      <h2 class="text-2xl py-2 sm:text-4xl lg:text-5xl font-bold">Create profiles for kids.</h2>
+      <h3 class="text-lg py-2 sm:text-xl lg:text-2xl">Send kids on adventures with their favorite characters in a space
+        made just for them—free with your membership.</h3>
+    </div>
+
+    <div>
+      <img src="./img/kids.png" alt="Kids" loading="lazy">
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <form action="#" class="flex flex-col items-center py-9">
+    <h3 class="text-xl text-center sm:text-[1.2rem]">Ready to watch? Enter your email to create or restart your
+      membership.</h3>
+    <div class="flex flex-col lg:flex-row items-center lg:items-stretch gap-y-2 justify-center my-4 w-4/5 lg:w-1/2">
+      <input type="email" name="email" class="px-4 py-2 w-full lg::w-4/5 text-black" placeholder="Email address">
+      <button type="submit"
+        class="red-btn lg:text-2xl lg:w-[262px] py-4 px-5 hover:brightness-110 flex items-center gap-x-2">Get Started
+        <img src="./img/svgexport-2.svg" loading="lazy"></button>
+    </div>
+  </form>
+
+  <footer class="footer-grey pt-12 px-[5%] lg:px-11 border-t-8 border-grey">
+    <p class="text-base my-4 px-8">Questions? Call <a href="tel:1-844-505-2993">1-844-505-2993</a></p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 text-[13px]">
+      <ul class="px-8">
+        <li><a href="#!">FAQ</a></li>
+        <li><a href="#!">Investor Relations</a></li>
+        <li><a href="#!">Ways to Watch</a></li>
+        <li><a href="#!">Corporate Information</a></li>
+        <li><a href="#!">Only on Netflix</a></li>
+      </ul>
+      <ul class="px-8">
+        <li><a href="#!">Help Center</a></li>
+        <li><a href="#!">Jobs</a></li>
+        <li><a href="#!">Terms of Use</a></li>
+        <li><a href="#!">Contact Us</a></li>
+      </ul>
+      <ul class="px-8">
+        <li><a href="#!">Account</a></li>
+        <li><a href="#!">Redeem Gift Cards</a></li>
+        <li><a href="#!">Privacy</a></li>
+        <li><a href="https://fast.com">Speed Test</a></li>
+      </ul>
+      <ul class="px-8">
+        <li><a href="#!">Media Center</a></li>
+        <li><a href="#!">Buy Gift Cards</a></li>
+        <li><a href="#!">Cookie Preferences</a></li>
+        <li><a href="#!">Legal Notices</a></li>
+      </ul>
+    </div>
+    <div class="mx-8 mt-6 mb-3">
+      <select name="language" class="bg-black text-gray-400 border border-[#333] rounded-sm py-3 px-4">
+        <option value="english">English</option>
+        <option value="spanish">Spanish</option>
+      </select>
+    </div>
+    <p class="py-2 px-8 text-tiny">Made by <a href="https://github.com/abrahamebij">Abraham</a></p>
+    
+  </footer>
+
+</body>
+
+</html>
